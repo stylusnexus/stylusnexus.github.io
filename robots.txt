@@ -1,0 +1,9 @@
+# Root robots.txt for stylusnexus.github.io.
+# This file also governs every project site under this domain
+# (/music-coach/, /statistics-for-ai/, and any added later).
+# All crawlers, including AI crawlers, may read everything.
+User-agent: *
+Allow: /
+
+Sitemap: https://stylusnexus.github.io/sitemap.xml
+Sitemap: https://stylusnexus.github.io/music-coach/sitemap.xml
