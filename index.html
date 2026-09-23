@@ -3,13 +3,234 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Stylus Nexus: Open Work</title>
-  <meta name="description" content="What Stylus Nexus has shipped: products, open-source agent tooling, and free courses and apps.">
-  <meta property="og:title" content="Stylus Nexus: Open Work">
-  <meta property="og:description" content="What Stylus Nexus has shipped: products, open-source agent tooling, and free courses and apps.">
-  <meta property="og:image" content="img/logo.png">
+  <title>Stylus Nexus Open Work: AI Agent Tools, Apps and Courses</title>
+  <meta name="description" content="What Stylus Nexus has shipped: CritForge, Soundstellation, open-source tools for AI coding agents, a free Mac music app, and a statistics course for AI.">
+  <link rel="canonical" href="https://stylusnexus.github.io/">
+  <meta name="theme-color" content="#15161a" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f7f6f2" media="(prefers-color-scheme: light)">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Stylus Nexus">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="https://stylusnexus.github.io/">
+  <meta property="og:title" content="Stylus Nexus Open Work: AI Agent Tools, Apps and Courses">
+  <meta property="og:description" content="What Stylus Nexus has shipped: CritForge, Soundstellation, open-source tools for AI coding agents, a free Mac music app, and a statistics course for AI.">
+  <meta property="og:image" content="https://stylusnexus.github.io/img/logo.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="192">
+  <meta property="og:image:height" content="192">
+  <meta property="og:image:alt" content="Stylus Nexus logo">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Stylus Nexus Open Work: AI Agent Tools, Apps and Courses">
+  <meta name="twitter:description" content="What Stylus Nexus has shipped: CritForge, Soundstellation, open-source tools for AI coding agents, a free Mac music app, and a statistics course for AI.">
+  <meta name="twitter:image" content="https://stylusnexus.github.io/img/logo.png">
+  <meta name="twitter:image:alt" content="Stylus Nexus logo">
   <link rel="icon" href="favicon.ico">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="sitemap" type="application/xml" href="https://stylusnexus.github.io/sitemap.xml">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://stylusnexus.github.io/#org",
+        "name": "Stylus Nexus",
+        "legalName": "Stylus Nexus Holdings LLC",
+        "url": "https://stylusnexus.github.io/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://stylusnexus.github.io/img/logo.png",
+          "width": 192,
+          "height": 192
+        },
+        "sameAs": [
+          "https://www.stylusnexus.com",
+          "https://github.com/stylusnexus"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "general inquiries",
+          "email": "admin@stylusnexus.com"
+        }
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://stylusnexus.github.io/#projects",
+        "name": "Stylus Nexus Open Work",
+        "description": "Products, open-source tools for AI coding agents, courses and apps shipped by Stylus Nexus.",
+        "numberOfItems": 13,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "SoftwareApplication",
+              "name": "CritForge",
+              "url": "https://www.getcritforge.com",
+              "description": "Tabletop RPG prep: 21 generators, one shared memory, and contradiction detection across them.",
+              "applicationCategory": "Tabletop RPG prep",
+              "publisher": { "@id": "https://stylusnexus.github.io/#org" }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": "SoftwareApplication",
+              "name": "Soundstellation",
+              "url": "https://trees.soundstellation.com",
+              "description": "A provenance-first graph of artist relationships: every link sourced, limits shown. Free, in beta.",
+              "isAccessibleForFree": true,
+              "publisher": { "@id": "https://stylusnexus.github.io/#org" }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@type": "SoftwareSourceCode",
+              "name": "agent-armor",
+              "url": "https://agentarmor.dev",
+              "codeRepository": "https://github.com/stylusnexus/agent-armor",
+              "description": "Library that detects and defends against AI Agent Traps: injection, jailbreaks, RAG poisoning, exfiltration. Based on the DeepMind Agent Traps taxonomy.",
+              "license": "https://opensource.org/licenses/MIT",
+              "publisher": { "@id": "https://stylusnexus.github.io/#org" }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "item": {
+              "@type": "SoftwareSourceCode",
+              "name": "defect-scan",
+              "url": "https://github.com/stylusnexus/defect-scan",
+              "codeRepository": "https://github.com/stylusnexus/defect-scan",
+              "description": "Claude Code and Codex plugin that runs your real analyzers, then reasons about what they miss. Local; no API key. 15 languages, report-only by default.",
+              "license": "https://opensource.org/licenses/MIT",
+              "publisher": { "@id": "https://stylusnexus.github.io/#org" }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "item": {
+              "@type": "CreativeWork",
+              "name": "startup-plan",
+              "url": "https://github.com/stylusnexus/startup-plan",
+              "description": "Playbook for working with AI coding agents: the loop, the failures already made, and where to fork or install. Combines Shipping with Agents and Testing with Agents.",
+              "publisher": { "@id": "https://stylusnexus.github.io/#org" }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "item": {
+              "@type": "SoftwareSourceCode",
+              "name": "full-starter",
+              "url": "https://github.com/stylusnexus/full-starter",
+              "codeRepository": "https://github.com/stylusnexus/full-starter",
+              "description": "Template: development and testing setup for AI-assisted projects in Claude Code, Codex, or Cursor.",
+              "publisher": { "@id": "https://stylusnexus.github.io/#org" }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 7,
+            "item": {
+              "@type": "SoftwareSourceCode",
+              "name": "agent-plugins",
+              "url": "https://github.com/stylusnexus/agent-plugins",
+              "codeRepository": "https://github.com/stylusnexus/agent-plugins",
+              "description": "Stylus Nexus plugins for Claude Code and Codex.",
+              "license": "https://opensource.org/licenses/MIT",
+              "publisher": { "@id": "https://stylusnexus.github.io/#org" }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 8,
+            "item": {
+              "@type": "SoftwareSourceCode",
+              "name": "skill-loop",
+              "url": "https://github.com/stylusnexus/skill-loop",
+              "codeRepository": "https://github.com/stylusnexus/skill-loop",
+              "description": "MCP server that improves your SKILL.md files: observe, inspect, amend, evaluate, repeat. Works with Claude Code, Codex, Copilot.",
+              "license": "https://opensource.org/licenses/MIT",
+              "publisher": { "@id": "https://stylusnexus.github.io/#org" }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 9,
+            "item": {
+              "@type": "SoftwareApplication",
+              "name": "Music Coach",
+              "url": "https://stylusnexus.github.io/music-coach/",
+              "sameAs": "https://github.com/stylusnexus/music-coach",
+              "description": "Free Mac app: learn to make music and learn GarageBand, no instrument needed. Guided lessons; bring your own key for the coach.",
+              "applicationCategory": "EducationalApplication",
+              "operatingSystem": "macOS",
+              "isAccessibleForFree": true,
+              "license": "https://opensource.org/licenses/MIT",
+              "publisher": { "@id": "https://stylusnexus.github.io/#org" }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 10,
+            "item": {
+              "@type": "Course",
+              "name": "Statistics for AI",
+              "url": "https://stylusnexus.github.io/statistics-for-ai/",
+              "sameAs": "https://github.com/stylusnexus/statistics-for-ai",
+              "description": "Ten lessons on the statistics that run AI systems, with real ML examples. Self-contained HTML.",
+              "isAccessibleForFree": true,
+              "license": "https://creativecommons.org/licenses/by/4.0/",
+              "provider": { "@id": "https://stylusnexus.github.io/#org" }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 11,
+            "item": {
+              "@type": "SoftwareSourceCode",
+              "name": "work-plan-toolkit",
+              "url": "https://github.com/stylusnexus/work-plan-toolkit",
+              "codeRepository": "https://github.com/stylusnexus/work-plan-toolkit",
+              "description": "CLI: daily planner for developers juggling many GitHub issues across tracks.",
+              "license": "https://opensource.org/licenses/MIT",
+              "publisher": { "@id": "https://stylusnexus.github.io/#org" }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 12,
+            "item": {
+              "@type": "SoftwareSourceCode",
+              "name": "todo-sync-flow",
+              "url": "https://github.com/stylusnexus/todo-sync-flow",
+              "codeRepository": "https://github.com/stylusnexus/todo-sync-flow",
+              "description": "GitHub Action that turns TODO, FIXME, and HACK comments into tracked issues.",
+              "publisher": { "@id": "https://stylusnexus.github.io/#org" }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 13,
+            "item": {
+              "@type": "SoftwareSourceCode",
+              "name": "hard-reload-extension",
+              "url": "https://github.com/stylusnexus/hard-reload-extension",
+              "codeRepository": "https://github.com/stylusnexus/hard-reload-extension",
+              "description": "Chrome extension: one-click hard reload, with an optional cache wipe.",
+              "publisher": { "@id": "https://stylusnexus.github.io/#org" }
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
   <style>
     /* Same family as the project sites (music-coach), in the Stylus Nexus teal. */
     :root {
@@ -95,7 +316,7 @@
     </header>
 
     <div class="hero">
-      <h1>Open Work</h1>
+      <h1>Stylus Nexus Open Work</h1>
       <p>The workbench behind <a href="https://www.stylusnexus.com">stylusnexus.com</a>: tools, guides, courses and apps we've shipped. One plain line per project, grouped by the job it does, with a link so you can go try it.</p>
     </div>
 
@@ -104,6 +325,8 @@
         Keeping this current: when a repo goes public, add it to the group that fits, with
         its type badge, one line of 14 words or fewer, license, and Site / Docs / Repo links
         (in that order). Minor tools go in Utilities as a row, not a card.
+        Then add it to the ItemList JSON-LD in <head> (bump numberOfItems) and to llms.txt;
+        if it has its own github.io site, add that URL to sitemap.xml.
       -->
       <section id="products" aria-labelledby="products-h">
         <h2 id="products-h">Products</h2>
@@ -181,7 +404,7 @@
           <li class="card">
             <h3>Music Coach <span class="badge">App</span></h3>
             <p>Free Mac app: learn to make music and learn GarageBand, no instrument needed.</p>
-            <p class="meta">Guided lessons · bring your own key for the coach · MIT · v0.4.0</p>
+            <p class="meta">Guided lessons · bring your own key for the coach · MIT</p>
             <p class="links"><a href="https://stylusnexus.github.io/music-coach/">Music Coach site</a> <a href="https://github.com/stylusnexus/music-coach">Music Coach repo</a></p>
           </li>
           <li class="card">

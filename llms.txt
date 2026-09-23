@@ -1,0 +1,36 @@
+# Stylus Nexus Open Work
+
+> Stylus Nexus (Stylus Nexus Holdings LLC) builds products, open-source tools for AI coding agents, and free courses and apps. This page is the workbench behind https://www.stylusnexus.com: one plain line per project, grouped by the job it does, with links. Unless noted, open-source code lives in the GitHub organization https://github.com/stylusnexus.
+
+- Company site: https://www.stylusnexus.com
+- Open Work page: https://stylusnexus.github.io/
+- GitHub organization: https://github.com/stylusnexus
+- Contact: admin@stylusnexus.com. Bug reports go to each project's own repo as an issue.
+
+## Products
+
+- [CritForge](https://www.getcritforge.com): Tabletop RPG prep: 21 generators, one shared memory, and contradiction detection across them. Commercial.
+- [Soundstellation](https://trees.soundstellation.com): A provenance-first graph of artist relationships: every link sourced, limits shown. Free, in beta.
+
+## Agent security and code quality
+
+- [agent-armor](https://agentarmor.dev): Library that detects and defends against AI Agent Traps: injection, jailbreaks, RAG poisoning, exfiltration. Based on the DeepMind Agent Traps taxonomy. MIT. Repo: https://github.com/stylusnexus/agent-armor
+- [defect-scan](https://github.com/stylusnexus/defect-scan): Plugin for Claude Code and Codex that runs your real analyzers, then reasons about what they miss. Local; no API key. 15 languages, report-only by default. MIT.
+
+## Working with AI coding agents
+
+- [startup-plan](https://github.com/stylusnexus/startup-plan): Playbook: the loop, the failures we've already made, and where to fork or install. Combines Shipping with Agents and Testing with Agents.
+- [full-starter](https://github.com/stylusnexus/full-starter): Template: development and testing setup for AI-assisted projects in Claude Code, Codex, or Cursor. Fork it as a starting point.
+- [agent-plugins](https://github.com/stylusnexus/agent-plugins): Stylus Nexus plugins for Claude Code and Codex. MIT.
+- [skill-loop](https://github.com/stylusnexus/skill-loop): MCP server that improves your SKILL.md files: observe, inspect, amend, evaluate, repeat. Claude Code, Codex, Copilot. MIT.
+
+## Learning
+
+- [Music Coach](https://stylusnexus.github.io/music-coach/): Free Mac app: learn to make music and learn GarageBand, no instrument needed. Guided lessons; bring your own key for the coach. MIT. Repo: https://github.com/stylusnexus/music-coach
+- [Statistics for AI](https://stylusnexus.github.io/statistics-for-ai/): Course: ten lessons on the statistics that run AI systems, with real ML examples. Self-contained HTML. CC BY 4.0. Repo: https://github.com/stylusnexus/statistics-for-ai
+
+## Developer utilities
+
+- [work-plan-toolkit](https://github.com/stylusnexus/work-plan-toolkit): CLI: daily planner for developers juggling many GitHub issues across tracks. MIT.
+- [todo-sync-flow](https://github.com/stylusnexus/todo-sync-flow): GitHub Action that turns TODO, FIXME, and HACK comments into tracked issues.
+- [hard-reload-extension](https://github.com/stylusnexus/hard-reload-extension): Chrome extension: one-click hard reload, with an optional cache wipe.
