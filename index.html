@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stylus Nexus: Open Work</title>
+  <meta name="description" content="What Stylus Nexus has shipped: products, open-source agent tooling, and free courses and apps.">
+  <meta property="og:title" content="Stylus Nexus: Open Work">
+  <meta property="og:description" content="What Stylus Nexus has shipped: products, open-source agent tooling, and free courses and apps.">
+  <meta property="og:image" content="img/logo.png">
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <style>
+    /* Same family as the project sites (music-coach), in the Stylus Nexus teal. */
+    :root {
+      --bg: #15161a;
+      --panel: #1e2026;
+      --line: #33363f;
+      --text: #e9e6df;
+      --muted: #a29f97;
+      --accent: #6cc3c3;
+      --badge: #243638;
+      --radius: 12px;
+      color-scheme: dark;
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f7f6f2;
+        --panel: #ffffff;
+        --line: #dcd9d1;
+        --text: #1d1e22;
+        --muted: #5d5b55;
+        --accent: #1f6264;
+        --badge: #e3eeee;
+        color-scheme: light;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    a { color: var(--accent); }
+    a:focus-visible, .skip:focus { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+    .skip { position: absolute; left: -9999px; top: 8px; background: var(--panel); padding: 8px 12px; }
+    .skip:focus { left: 16px; }
+    .wrap { max-width: 1040px; margin: 0 auto; padding: 0 20px; }
+    header.top { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 20px 0; flex-wrap: wrap; }
+    .brand { display: flex; align-items: center; gap: 12px; color: var(--text); text-decoration: none; font-weight: 700; font-size: 18px; }
+    .brand img { width: 44px; height: 44px; border-radius: 10px; }
+    header.top nav a { color: var(--muted); text-decoration: none; margin-left: 18px; }
+    header.top nav a:hover { color: var(--text); }
+    .hero { padding: 40px 0 24px; }
+    .hero h1 { font-size: clamp(30px, 5vw, 46px); line-height: 1.15; margin: 0 0 14px; letter-spacing: -0.02em; }
+    .hero p { color: var(--muted); font-size: 19px; max-width: 700px; margin: 0; }
+    section { margin: 48px 0 56px; }
+    h2 { font-size: 26px; margin: 0 0 4px; letter-spacing: -0.01em; }
+    .intro { color: var(--muted); margin: 0 0 20px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 16px; list-style: none; padding: 0; margin: 0; }
+    .card { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px; display: flex; flex-direction: column; gap: 8px; }
+    .card h3 { margin: 0; font-size: 19px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+    .badge { font-size: 12px; font-weight: 600; color: var(--accent); background: var(--badge); border-radius: 999px; padding: 2px 10px; }
+    .card p { margin: 0; }
+    .meta { color: var(--muted); font-size: 14px; }
+    .links { margin-top: auto; padding-top: 6px; display: flex; gap: 16px; flex-wrap: wrap; font-size: 15px; }
+    .rows { list-style: none; padding: 0; margin: 0; border-top: 1px solid var(--line); }
+    .rows li { display: flex; gap: 12px; align-items: baseline; flex-wrap: wrap; padding: 12px 0; border-bottom: 1px solid var(--line); }
+    .rows strong { min-width: 190px; }
+    .rows .desc { flex: 1 1 320px; }
+    footer { border-top: 1px solid var(--line); padding: 28px 0 48px; color: var(--muted); font-size: 15px; }
+    footer p { margin: 0 0 6px; }
+    @media (max-width: 600px) {
+      header.top nav a { margin: 0 14px 0 0; }
+      .rows strong { min-width: 0; }
+    }
+    @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to the list</a>
+  <div class="wrap">
+    <header class="top">
+      <a class="brand" href="./"><img src="img/logo.png" alt="" width="44" height="44">Stylus Nexus</a>
+      <nav aria-label="Sections">
+        <a href="#products">Products</a>
+        <a href="#agents">Agent security</a>
+        <a href="#loop">Working with agents</a>
+        <a href="#learning">Learning</a>
+        <a href="#utilities">Utilities</a>
+        <a href="https://www.stylusnexus.com">stylusnexus.com</a>
+      </nav>
+    </header>
+
+    <div class="hero">
+      <h1>Open Work</h1>
+      <p>The workbench behind <a href="https://www.stylusnexus.com">stylusnexus.com</a>: tools, guides, courses and apps we've shipped. One plain line per project, grouped by the job it does, with a link so you can go try it.</p>
+    </div>
+
+    <main id="main">
+      <!--
+        Keeping this current: when a repo goes public, add it to the group that fits, with
+        its type badge, one line of 14 words or fewer, license, and Site / Docs / Repo links
+        (in that order). Minor tools go in Utilities as a row, not a card.
+      -->
+      <section id="products" aria-labelledby="products-h">
+        <h2 id="products-h">Products</h2>
+        <p class="intro">Our two larger products live on their own sites.</p>
+        <ul class="grid">
+          <li class="card">
+            <h3>CritForge <span class="badge">Product</span></h3>
+            <p>Tabletop RPG prep: 21 generators, one shared memory, and contradiction detection across them.</p>
+            <p class="meta">Commercial</p>
+            <p class="links"><a href="https://www.getcritforge.com">CritForge site</a></p>
+          </li>
+          <li class="card">
+            <h3>Soundstellation <span class="badge">Product</span> <span class="badge">Beta</span></h3>
+            <p>A provenance-first graph of artist relationships: every link sourced, limits shown.</p>
+            <p class="meta">Free · Beta</p>
+            <p class="links"><a href="https://trees.soundstellation.com">Soundstellation site</a></p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="agents" aria-labelledby="agents-h">
+        <h2 id="agents-h">Agent security and code quality</h2>
+        <p class="intro">Covers what an agent reads, and what your analyzers miss.</p>
+        <ul class="grid">
+          <li class="card">
+            <h3>agent-armor <span class="badge">Library</span></h3>
+            <p>Detects and defends against AI Agent Traps: injection, jailbreaks, RAG poisoning, exfiltration.</p>
+            <p class="meta">Based on the DeepMind Agent Traps taxonomy · MIT</p>
+            <p class="links"><a href="https://agentarmor.dev">agent-armor site</a> <a href="https://github.com/stylusnexus/agent-armor">agent-armor repo</a></p>
+          </li>
+          <li class="card">
+            <h3>defect-scan <span class="badge">Plugin</span></h3>
+            <p>Runs your real analyzers, then reasons about what they miss. Local; no API key.</p>
+            <p class="meta">Claude Code, Codex · 15 languages · report-only by default · MIT</p>
+            <p class="links"><a href="https://github.com/stylusnexus/defect-scan">defect-scan repo</a></p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="loop" aria-labelledby="loop-h">
+        <h2 id="loop-h">Working with AI coding agents</h2>
+        <p class="intro">The loop we use, and the tools that go with it.</p>
+        <ul class="grid">
+          <li class="card">
+            <h3>startup-plan <span class="badge">Playbook</span></h3>
+            <p>The loop, the failures we've already made, and where to fork or install.</p>
+            <p class="meta">Combines Shipping with Agents and Testing with Agents</p>
+            <p class="links"><a href="https://github.com/stylusnexus/startup-plan">startup-plan repo</a></p>
+          </li>
+          <li class="card">
+            <h3>full-starter <span class="badge">Template</span></h3>
+            <p>Development and testing setup for AI-assisted projects in Claude Code, Codex, or Cursor.</p>
+            <p class="meta">Fork it as a starting point</p>
+            <p class="links"><a href="https://github.com/stylusnexus/full-starter">full-starter repo</a></p>
+          </li>
+          <li class="card">
+            <h3>agent-plugins <span class="badge">Plugins</span></h3>
+            <p>Stylus Nexus plugins for Claude Code and Codex.</p>
+            <p class="meta">MIT</p>
+            <p class="links"><a href="https://github.com/stylusnexus/agent-plugins">agent-plugins repo</a></p>
+          </li>
+          <li class="card">
+            <h3>skill-loop <span class="badge">MCP server</span></h3>
+            <p>Improves your SKILL.md files: observe, inspect, amend, evaluate, repeat.</p>
+            <p class="meta">Claude Code, Codex, Copilot · MIT</p>
+            <p class="links"><a href="https://github.com/stylusnexus/skill-loop">skill-loop repo</a></p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="learning" aria-labelledby="learning-h">
+        <h2 id="learning-h">Learning</h2>
+        <p class="intro">For when the docs assume you already know.</p>
+        <ul class="grid">
+          <li class="card">
+            <h3>Music Coach <span class="badge">App</span></h3>
+            <p>Free Mac app: learn to make music and learn GarageBand, no instrument needed.</p>
+            <p class="meta">Guided lessons · bring your own key for the coach · MIT · v0.4.0</p>
+            <p class="links"><a href="https://stylusnexus.github.io/music-coach/">Music Coach site</a> <a href="https://github.com/stylusnexus/music-coach">Music Coach repo</a></p>
+          </li>
+          <li class="card">
+            <h3>Statistics for AI <span class="badge">Course</span></h3>
+            <p>Ten lessons on the statistics that run AI systems, with real ML examples.</p>
+            <p class="meta">Self-contained HTML · CC BY 4.0</p>
+            <p class="links"><a href="https://stylusnexus.github.io/statistics-for-ai/">Statistics for AI course</a> <a href="https://github.com/stylusnexus/statistics-for-ai">Statistics for AI repo</a></p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="utilities" aria-labelledby="utilities-h">
+        <h2 id="utilities-h">Developer utilities</h2>
+        <p class="intro">Small tools for the chores around the code.</p>
+        <ul class="rows">
+          <li><strong><a href="https://github.com/stylusnexus/work-plan-toolkit">work-plan-toolkit</a></strong> <span class="badge">CLI</span> <span class="desc">Daily planner for developers juggling many GitHub issues across tracks. MIT.</span></li>
+          <li><strong><a href="https://github.com/stylusnexus/todo-sync-flow">todo-sync-flow</a></strong> <span class="badge">Action</span> <span class="desc">GitHub Action that turns TODO, FIXME, and HACK comments into tracked issues.</span></li>
+          <li><strong><a href="https://github.com/stylusnexus/hard-reload-extension">hard-reload-extension</a></strong> <span class="badge">Extension</span> <span class="desc">Chrome extension: one-click hard reload, with an optional cache wipe.</span></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 Stylus Nexus Holdings LLC · <a href="https://www.stylusnexus.com">stylusnexus.com</a> · <a href="https://github.com/stylusnexus">GitHub</a></p>
+      <p>Questions? Email <a href="mailto:admin@stylusnexus.com">admin@stylusnexus.com</a>. Found a bug? Open an issue on that project's repo.</p>
+    </footer>
+  </div>
+</body>
+</html>
