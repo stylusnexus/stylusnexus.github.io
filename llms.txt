@@ -21,7 +21,7 @@
 
 - [startup-plan](https://github.com/stylusnexus/startup-plan): Playbook: the loop, the failures we've already made, and where to fork or install. Combines Shipping with Agents and Testing with Agents.
 - [full-starter](https://github.com/stylusnexus/full-starter): Template: development and testing setup for AI-assisted projects in Claude Code, Codex, or Cursor. Fork it as a starting point.
-- [agent-plugins](https://github.com/stylusnexus/agent-plugins): Skill packs for Claude Code, Codex, and about 70 other coding agents: shipping, reviews, hardening, releases, product strategy, and go-to-market. Install from the plugin marketplace or with npx skills. MIT. npm: https://www.npmjs.com/package/@stylusnexus/agent-plugins
+- [agent-plugins](https://stylusnexus.github.io/agent-plugins/): Skill packs for Claude Code, Codex, and about 70 other coding agents: shipping, reviews, hardening, releases, product strategy, and go-to-market. Install from the plugin marketplace or with npx skills. MIT. Repo: https://github.com/stylusnexus/agent-plugins npm: https://www.npmjs.com/package/@stylusnexus/agent-plugins
 - [skill-loop](https://github.com/stylusnexus/skill-loop): MCP server that improves your SKILL.md files: observe, inspect, amend, evaluate, repeat. Claude Code, Codex, Copilot. MIT.
 
 ## Learning
